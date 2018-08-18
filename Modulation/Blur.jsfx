@@ -1,0 +1,44 @@
+desc: Blur
+version: 1.0
+author: Paavo Toivanen
+changelog: Initial Release
+link: 
+about: A simple blur effect
+
+/**
+ * JSFX Name: Blur
+ * Author: Paavo Toivamem
+ * Licence: GPL v3
+ * REAPER: 5.0
+ * Version: 1.0
+ */
+
+slider1:10<1,1000,1>Sample range
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
+@slider
+  counti=slider1;
+
+@sample
+
+lnow=spl0;
+rnow=spl1;
+
+1000[ii]=lnow;
+2000[ii]=rnow;
+ii=(ii+1)%counti;
+
+lsum=0;
+rsum=0;
+i=0;
+loop(counti,
+  lsum+=1000[i];
+  rsum+=2000[i];
+  i+=1;
+);
+spl0=lsum/counti;
+spl1=rsum/counti;
