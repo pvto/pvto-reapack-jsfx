@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="pvto's JSFX effects"/>
+<index version="1" name="pvto's JSFX effects" commit="a5ea278591cd8cceec109fcc4fa88f0f0d9ff134">
+  <category name="Modulation">
+    <reapack name="Blur.jsfx" type="effect" desc="Blur">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 A simple blur effect\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Paavo Toivanen" time="2018-08-18T19:03:33Z">
+        <changelog><![CDATA[Initial Release]]></changelog>
+        <source>https://github.com/pvto/pvto-reapack-jsfx/raw/a5ea278591cd8cceec109fcc4fa88f0f0d9ff134/Modulation/Blur.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+</index>
